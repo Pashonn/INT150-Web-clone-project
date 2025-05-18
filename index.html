@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube Music</title>
+  <link rel="stylesheet" href="youtube_music.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="img/Youtube_Music_icon.svg.png" />
+</head>
+<body>
+  
+  <div class="main">
+    <header class="topbar">
+      <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+</svg></div>
+      <div class="logo"><img src="img/Youtube_Music_icon.svg.png" width="25px"> Music</div>
+      <input type="text" placeholder="Serach song album podcast"/>
+      <div class="profile"></div>
+    </header>
+    <div class="container">
+      <div class="sidebar">
+        <nav>
+          <a href="#" class="active"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+  <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+</svg>Home</a>
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-compass" viewBox="0 0 16 16">
+  <path d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016m6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+  <path d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z"/>
+</svg>Explore</a>
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-music-note" viewBox="0 0 16 16">
+  <path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2"/>
+  <path fill-rule="evenodd" d="M9 3v10H8V3z"/>
+  <path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z"/>
+</svg>Library</a>
+        </nav>
+      </div>
+      <div class="content">
+      <section class="tags">
+        <button>Romance</button>
+        <button>Calm</button>
+        <button>Sleeping</button>
+        <button>Sad</button>
+        <button>Focus</button>
+        <button>Feel good</button>
+        <button>Party</button>
+        <button>Commute</button>
+        <button>Work out</button>
+        <button>Traveling</button>
+      </section>
+      <div class="quick-picks">
+          <h2>Quick picks</h2>
+          <div class="grid">
+            <div class="card">
+              <img src="img/Arctic monkey.jpg" alt="cover" />
+              <div class="info">
+                <div class="title">Song 1 </div>
+                <div class="meta">Artist • Played times • Song name</div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/Bewitched.jpeg" alt="cover" />
+              <div class="info">
+                <div class="title">Song 2 </div>
+                <div class="meta">Artist • Played times • Song name</div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/brid of feather.png" alt="cover" />
+              <div class="info">
+                <div class="title">Song 3 </div>
+                <div class="meta">Artist • Played times • Song name</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="quick-picks">
+          <div class="grid">
+            <div class="card">
+              <img src="img/saturn.png" alt="cover" />
+              <div class="info">
+                <div class="title">Song 4 </div>
+                <div class="meta">Artist • Played times • Song name</div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/SZA_-_S.O.S.png" alt="cover" />
+              <div class="info">
+                <div class="title">Song 5 </div>
+                <div class="meta">Artist • Played times • Song name</div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/Cut.jpg" alt="cover" />
+              <div class="info">
+                <div class="title">Song 6 </div>
+                <div class="meta">Artist • Played times • Song name</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="quick-picks">
+          <div class="grid">
+            <div class="card">
+              <img src="img/everything laufey.png" alt="cover" />
+              <div class="info">
+                <div class="title">Song 7 </div>
+                <div class="meta">Artist • Played times • Song name</div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/radiohead 2.jpg" alt="cover" />
+              <div class="info">
+                <div class="title">Song 8 </div>
+                <div class="meta">Artist • Played times • Song name</div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/Radionhead 1.png" alt="cover" />
+              <div class="info">
+                <div class="title">Song 9 </div>
+                <div class="meta">Artist • Played times • Song name</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <section class="recent">
+        <h2>Listen again</h2>
+        <div class="song-grid">
+          <div class="song-card">
+            <img src="./img/keshi.jpg" alt="album" />
+            <p class="title">Song 1</p>
+            <p class="artist">Artist 1</p>
+          </div>
+          <div class="song-card">
+            <img src="./img/promise.jpg" alt="album" />
+            <p class="title">Song 2</p>
+            <p class="artist">Artist 2</p>
+          </div>
+          <div class="song-card">
+            <img src="./img/soft spot.jpg" alt="album" />
+            <p class="title">Song 3</p>
+            <p class="artist">Artist 3</p>
+          </div>
+          <div class="song-card">
+              <img src="./img/Bewitched.jpeg" alt="album" />
+            <p class="title">Song 4</p>
+            <p class="artist">Artist 4</p>
+          </div>
+          <div class="song-card">
+              <img src="./img/Arctic monkey.jpg" alt="album" />
+            <p class="title">Song  5</p>
+            <p class="artist">Artist 5</p>
+          </div>
+          <div class="song-card">
+              <img src="./img/taylor1.jpg" alt="album" />
+            <p class="title">Song 6</p>
+            <p class="artist">Artist 6</p>
+          </div>
+          <div class="song-card">
+              <img src="./img/pinknigga.jpg" alt="album" />
+            <p class="title">Song 7</p>
+            <p class="artist">Artist 7</p>
+          </div><div class="song-card">
+              <img src="./img/gekko.jpg" alt="album" />
+            <p class="title">Song 8</p>
+            <p class="artist">Artist 8</p>
+          </div><div class="song-card">
+              <img src="./img/lalalala.jpg" alt="album" />
+            <p class="title">Song 9</p>
+            <p class="artist">Artist 9</p>
+          </div>
+        </div>
+      </section>
+      <section class="recent">
+        <h2>Today's hits</h2>
+        <div class="song-grid">
+          <div class="song-card">
+            <img src="./img/starboy.jpg" alt="album" />
+            <p class="title">Song 1</p>
+            <p class="artist">Artist 1</p>
+          </div>
+          <div class="song-card">
+            <img src="./img/tylerthecreative.jpg" alt="album" />
+            <p class="title">Song 2</p>
+            <p class="artist">Artist 2</p>
+          </div>
+          <div class="song-card">
+            <img src="./img/after hour.jpg" alt="album" />
+            <p class="title">Song 3</p>
+            <p class="artist">Artist 3</p>
+          </div>
+          <div class="song-card">
+              <img src="./img/SZA_-_S.O.S.png" alt="album" />
+            <p class="title">Song 4</p>
+            <p class="artist">Artist 4</p>
+          </div>
+          <div class="song-card">
+              <img src="./img/amoonshapedpool.jpg" alt="album" />
+            <p class="title">Song  5</p>
+            <p class="artist">Artist 5</p>
+          </div>
+          <div class="song-card">
+              <img src="./img/anti.jpg" alt="album" />
+            <p class="title">Song 6</p>
+            <p class="artist">Artist 6</p>
+          </div>
+          <div class="song-card">
+              <img src="./img/currents.jpg" alt="album" />
+            <p class="title">Song 7</p>
+            <p class="artist">Artist 7</p>
+          </div><div class="song-card">
+              <img src="./img/blur.jpg" alt="album" />
+            <p class="title">Song 8</p>
+            <p class="artist">Artist 8</p>
+          </div><div class="song-card">
+              <img src="./img/mogwai.jpg" alt="album" />
+            <p class="title">Song 9</p>
+            <p class="artist">Artist 9</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="quick-picks">
+          <h2>Trending songs for you</h2>
+          <div class="grid">
+            <div class="card">
+              <img src="img/houseofballons.jpg" alt="cover" />
+              <div class="info">
+                <div class="title">Song 1 </div>
+                <div class="meta">Artist • Played times • Song name</div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/amoonshapedpool.jpg" alt="cover" />
+              <div class="info">
+                <div class="title">Song 2 </div>
+                <div class="meta">Artist • Played times • Song name</div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/usgirls.jpg" alt="cover" />
+              <div class="info">
+                <div class="title">Song 3 </div>
+                <div class="meta">Artist • Played times • Song name</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="quick-picks">
+          <div class="grid">
+            <div class="card">
+              <img src="img/weyesblood.jpg" alt="cover" />
+              <div class="info">
+                <div class="title">Song 4 </div>
+                <div class="meta">Artist • Played times • Song name</div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/topimpabutterfly.jpg" alt="cover" />
+              <div class="info">
+                <div class="title">Song 5 </div>
+                <div class="meta">Artist • Played times • Song name</div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/jaysom.jpg" alt="cover" />
+              <div class="info">
+                <div class="title">Song 6 </div>
+                <div class="meta">Artist • Played times • Song name</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="quick-picks">
+          <div class="grid">
+            <div class="card">
+              <img src="img/currents.jpg" alt="cover" />
+              <div class="info">
+                <div class="title">Song 7 </div>
+                <div class="meta">Artist • Played times • Song name</div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/savagemode.jpg" alt="cover" />
+              <div class="info">
+                <div class="title">Song 8 </div>
+                <div class="meta">Artist • Played times • Song name</div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/Radionhead 1.png" alt="cover" />
+              <div class="info">
+                <div class="title">Song 9 </div>
+                <div class="meta">Artist • Played times • Song name</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <section class="recent">
+        <h2>Albums for you</h2>
+        <div class="song-grid">
+          <div class="song-card">
+            <img src="./img/king krule.jpg" alt="album" />
+            <p class="title">Song 1</p>
+            <p class="artist">Artist 1</p>
+          </div>
+          <div class="song-card">
+            <img src="./img/taylor1.jpg" alt="album" />
+            <p class="title">Song 2</p>
+            <p class="artist">Artist 2</p>
+          </div>
+          <div class="song-card">
+            <img src="./img/starboy.jpg" alt="album" />
+            <p class="title">Song 3</p>
+            <p class="artist">Artist 3</p>
+          </div>
+          <div class="song-card">
+              <img src="./img/topimpabutterfly.jpg" alt="album" />
+            <p class="title">Song 4</p>
+            <p class="artist">Artist 4</p>
+          </div>
+          <div class="song-card">
+              <img src="./img/iceage.jpg" alt="album" />
+            <p class="title">Song  5</p>
+            <p class="artist">Artist 5</p>
+          </div>
+          <div class="song-card">
+              <img src="./img/arcadefire.jpg" alt="album" />
+            <p class="title">Song 6</p>
+            <p class="artist">Artist 6</p>
+          </div>
+          <div class="song-card">
+              <img src="./img/promise.jpg" alt="album" />
+            <p class="title">Song 7</p>
+            <p class="artist">Artist 7</p>
+          </div><div class="song-card">
+              <img src="./img/radiohead 2.jpg" alt="album" />
+            <p class="title">Song 8</p>
+            <p class="artist">Artist 8</p>
+          </div><div class="song-card">
+              <img src="./img/pinknigga.jpg" alt="album" />
+            <p class="title">Song 9</p>
+            <p class="artist">Artist 9</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="recent">
+        <h2>New releases</h2>
+        <div class="song-grid">
+          <div class="song-card">
+            <img src="./img/divers.jpg" alt="album" />
+            <p class="title">Song 1</p>
+            <p class="artist">Artist 1</p>
+          </div>
+          <div class="song-card">
+            <img src="./img/oddhours.jpg" alt="album" />
+            <p class="title">Song 2</p>
+            <p class="artist">Artist 2</p>
+          </div>
+          <div class="song-card">
+            <img src="./img/tylerthecreative.jpg" alt="album" />
+            <p class="title">Song 3</p>
+            <p class="artist">Artist 3</p>
+          </div>
+          <div class="song-card">
+              <img src="./img/houseofballons.jpg" />
+            <p class="title">Song 4</p>
+            <p class="artist">Artist 4</p>
+          </div>
+          <div class="song-card">
+              <img src="./img/Arctic monkey.jpg" alt="album" />
+            <p class="title">Song  5</p>
+            <p class="artist">Artist 5</p>
+          </div>
+          <div class="song-card">
+              <img src="./img/malibu.jpg" alt="album" />
+            <p class="title">Song 6</p>
+            <p class="artist">Artist 6</p>
+          </div>
+          <div class="song-card">
+              <img src="./img/weyesblood.jpg" alt="album" />
+            <p class="title">Song 7</p>
+            <p class="artist">Artist 7</p>
+          </div><div class="song-card">
+              <img src="./img/anti.jpg" alt="album" />
+            <p class="title">Song 8</p>
+            <p class="artist">Artist 8</p>
+          </div><div class="song-card">
+              <img src="./img/soft spot.jpg" alt="album"/>
+            <p class="title">Song 9</p>
+            <p class="artist">Artist 9</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="recent">
+        <h2>Featured playlists for you</h2>
+        <div class="song-grid">
+          <div class="song-card">
+            <img src="./img/brid of feather.png" alt="album" />
+            <p class="title">Song 1</p>
+            <p class="artist">Artist 1</p>
+          </div>
+          <div class="song-card">
+            <img src="./img/savagemode.jpg" alt="album" />
+            <p class="title">Song 2</p>
+            <p class="artist">Artist 2</p>
+          </div>
+          <div class="song-card">
+            <img src="./img/radiohead 2.jpg" alt="album" />
+            <p class="title">Song 3</p>
+            <p class="artist">Artist 3</p>
+          </div>
+          <div class="song-card">
+              <img src="./img/Radionhead 1.png" alt="album" />
+            <p class="title">Song 4</p>
+            <p class="artist">Artist 4</p>
+          </div>
+          <div class="song-card">
+              <img src="./img/king krule.jpg" alt="album" />
+            <p class="title">Song  5</p>
+            <p class="artist">Artist 5</p>
+          </div>
+          <div class="song-card">
+              <img src="./img/lorde.jpg" alt="album" />
+            <p class="title">Song 6</p>
+            <p class="artist">Artist 6</p>
+          </div>
+          <div class="song-card">
+              <img src="./img/starboy.jpg" alt="album" />
+            <p class="title">Song 7</p>
+            <p class="artist">Artist 7</p>
+          </div><div class="song-card">
+              <img src="./img/SZA_-_S.O.S.png" />
+            <p class="title">Song 8</p>
+            <p class="artist">Artist 8</p>
+          </div><div class="song-card">
+              <img src="./img/amoonshapedpool.jpg" alt="album" />
+            <p class="title">Song 9</p>
+            <p class="artist">Artist 9</p>
+          </div>
+        </div>
+      </section>
+
+    <div class="quick-picks">
+          <h2>Trending songs in short</h2>
+          <div class="grid">
+            <div class="card">
+              <img src="img/ilove.jpg" alt="cover" />
+              <div class="info">
+                <div class="title">Song 1 </div>
+                <div class="meta">Artist • Played times • Song name</div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/thailand.jpg" alt="cover" />
+              <div class="info">
+                <div class="title">Song 2 </div>
+                <div class="meta">Artist • Played times • Song name</div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/pinknigga.jpg" alt="cover" />
+              <div class="info">
+                <div class="title">Song 3 </div>
+                <div class="meta">Artist • Played times • Song name</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="quick-picks">
+          <div class="grid">
+            <div class="card">
+              <img src="img/brid of feather.png" alt="cover" />
+              <div class="info">
+                <div class="title">Song 4 </div>
+                <div class="meta">Artist • Played times • Song name</div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/Arctic monkey.jpg" />
+              <div class="info">
+                <div class="title">Song 5 </div>
+                <div class="meta">Artist • Played times • Song name</div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/topimpabutterfly.jpg" alt="cover" />
+              <div class="info">
+                <div class="title">Song 6 </div>
+                <div class="meta">Artist • Played times • Song name</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="quick-picks">
+          <div class="grid">
+            <div class="card">
+              <img src="img/usgirls.jpg" />
+              <div class="info">
+                <div class="title">Song 7 </div>
+                <div class="meta">Artist • Played times • Song name</div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/weyesblood.jpg" alt="cover" />
+              <div class="info">
+                <div class="title">Song 8 </div>
+                <div class="meta">Artist • Played times • Song name</div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="img/starboy.jpg" alt="cover" />
+              <div class="info">
+                <div class="title">Song 9 </div>
+                <div class="meta">Artist • Played times • Song name</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
