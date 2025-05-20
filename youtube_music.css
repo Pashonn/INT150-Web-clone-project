@@ -1,3 +1,5 @@
+/* CSS สำหรับเว็บไซต์ Youtube Music */
+/* กำหนดให้ body มีพื้นหลังสีดำและตัวอักษรเป็นสีขาว กำหนดdisplayเป็นแบบ flex*/
 body {
     margin: 0;
     font-family: sans-serif;
@@ -5,10 +7,13 @@ body {
     color: white;
     display: flex;
   }
+  /* กำหนดให้ container มีการจัดเรียงแบบ flex-direction เป็น row */
   .container {
     display:flex;
     flex-direction: row;
   }
+  /* กำหนดให้ sidebar มีพื้นหลังสีดำ ขนาดกว้าง 15% ของหน้าจอ และมีการจัดเรียงแบบ column */
+  /* กำหนดให้ sidebar มีการ padding 20px และ border เป็นสี #333 */
   .sidebar {
     background: #000000;
     width: 15%;
@@ -17,6 +22,7 @@ body {
     flex-direction: column;
     border: 1px solid #333;
   }
+  /* กำหนดความห้างของ ที่เป็น โลโก้ และ svg*/
   svg{
     margin:10px;
   }
@@ -26,9 +32,11 @@ body {
     margin-top: 25px;
     margin-right: 10px;
   }
+
   .content{
     width: 85%
   }
+  /* กำหนดให้ nav เป็น display แบบ flex สีตัวหนังสือสีขาว padding 10px จัดให้มันอยู่ตรงกลาง*/
   nav a {
     display: flex;
     color: white;
@@ -37,17 +45,17 @@ body {
     border-radius: 6px;
     align-items: center;
   }
-  
+  /* กำหนดให้เมื่อ hover หรือ active จะมีพื้นหลังเป็นสี #333 */
   nav a.active, nav a:hover {
     background-color: #333;
   }
-  
+  /* กำหนดให้ nav มีการจัดเรียงแบบ column */
   .main {
     display: flex;
     flex-direction: column;
     overflow: hidden;
   }
-  
+  /* กำหนดให้แถบ topbar มีการจัดเรียงแบบ flex justify-content: space-between เป็นสีดำ กำหนดสีของขอบและความสูงของ topbar*/ 
   .topbar {
     display: flex;
     justify-content: space-between;
@@ -58,7 +66,7 @@ body {
     border: 1px solid #333;
     
   }
-  
+  /* กำหนดตัวอักษรใน input ให้เป็นสีขาว และมีพื้นหลังเป็นสีดำที่เป็นตัว searchbar */
   .topbar input {
     flex: 1;
     padding: 10px;
@@ -70,21 +78,21 @@ body {
     margin-left: 20px;
     
   }
-  
+  /* กำหนดตัวที่เป็นแสดงโปรไฟล์ให้มีขนาด 35px และมีพื้นหลังเป็นสีเทาอ่อน และ border-radius เป็น 50% เพื่อให้เป็นรูปวงกลม */
   .profile {
     width: 35px;
     height: 35px;
     background: #888;
     border-radius: 50%;
   }
-  
+  /* กำหนดให้ tag เป็น display แบบ flex flex-wrap: wrap และมีการจัดเรียงแบบ gap: 10px เพื่อให้ tag มีระยะห่างกัน */
   .tags {
     padding: 10px 20px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
   }
-  
+  /* กำหนดให้ button ใน tag มีพื้นหลังเป็นสีดำ ข้อความเป็นสีขาว padding 6px 14px border-radius 20px และ cursor เป็น pointer เพื่อให้สามารถคลิกได้ */
   .tags button {
     background: #333;
     color: white;
@@ -102,14 +110,16 @@ body {
   .recent h2 {
     margin-top: 20px;
   }
-  
+  /* กำหนดให้ song-grid เป็น display แบบ flex และมีการจัดเรียงแบบ gap: 20px เพื่อให้ song-grid มีระยะห่างกัน 
+  overflwow-x: auto เพื่อให้ song-grid สามารถเลื่อนซ้ายขวาได้ */
   .song-grid {
     display: flex;
     gap: 20px;
     margin-top: 10px;
     overflow-x: auto;
   }
-  
+  /* กำหนดให้ song-card เป็น display แบบ flex flex-direction: column และมีการจัดเรียงแบบ align-items: center justify-content: center */
+  /* กำหนดให้ song-card มีขนาดกว้าง 150px และมีสีตัวอักษรเป็นสีขาว border-radius: 8px flex-shrink: 0 เพื่อไม่ให้ song-card หดตัว */
   .song-card {
     width: 150px;
     color: white;
@@ -118,12 +128,14 @@ body {
     border-radius: 8px;
     flex-shrink: 0;
   }
+  /* กำหนดให้ song-card มีพื้นหลังเป็นสีดำ padding 10px และมีการจัดเรียงแบบ flex flex-direction: column */
+  /* กำหนดให้ song-card มีการจัดเรียงแบบ gap: 10px เพื่อให้ song-card มีระยะห่างกัน */
   .song-card img {
     width: 100%;
     border-radius: 10px;
     display: flex;
   }
-  
+  /* กำหนดความห่างของ title และ artist ให้มีการจัดเรียงแบบ flex flex-direction: column */ 
   .title {
     margin: 5px 0 0;
     font-weight: bold;
@@ -133,7 +145,8 @@ body {
     font-size: 12px;
     color: #aaa;
   }
-  
+  /* กำหนดให้ขนาดของ .quick-picks ที่เป็น h2 มีขนาด 32px และสีเป็นสีขาว margin-bottom 20px */
+  /* กำหนดให้ .quick-picks มีการ padding 0px 0px 0px 20px overflow-y: auto เพื่อให้ quick-picks สามารถเลื่อนขึ้นลงได้ */
   .quick-picks h2 {
     font-size: 32px;
     color: white;
@@ -143,13 +156,14 @@ body {
     padding: 0px 0px 0px 20px; ;
     overflow-y: auto;
   }
-  
+  /* กำหนดให้ .grid เป็น display แบบ grid grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) เพื่อให้ grid มีการจัดเรียงแบบ grid และมีขนาดของ column เป็น 300px และมีการจัดเรียงแบบ gap: 20px เพื่อให้ grid มีระยะห่างกัน */
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
   }
   
+  /* กำหนดให้ .card เป็น display แบบ flex flex-direction: row และมีการจัดเรียงแบบ gap: 15px เพื่อให้ card มีระยะห่างกัน */
   .card {
     display: flex;
     gap: 15px;
@@ -159,28 +173,29 @@ body {
     border-radius: 8px;
     transition: background 0.3s;
   }
-  
+  /* เมื่อ .card ถูก hover จะมีพื้นหลังเป็นสี #282828 */
   .card:hover {
     background-color: #282828;
   }
-  
+  /* กำหนดให้ .card img มีขนาด 64px x 64px และมีการจัดเรียงแบบ object-fit: cover เพื่อให้รูปภาพมีขนาดที่เหมาะสม  */
   .card img {
     width: 64px;
     height: 64px;
     object-fit: cover;
     border-radius: 4px;
   }
-  
+  /* กำหนดให้ .info .titile มีขนาด 16px และ font-weight: bold เพื่อให้ title มีขนาดใหญ่และหนา */ 
   .info .title {
     font-size: 16px;
     font-weight: bold;
   }
-  
+  /* กำหนดให้ .info .artist มีขนาด 14px และสีเป็นสีเทาอ่อน margin-top: 4px เพื่อให้ artist มีขนาดเล็กกว่า title  */
   .info .meta {
     font-size: 14px;
     color: #b3b3b3;
     margin-top: 4px;
   }
+
   /* ส่วนนี้ทำมาเพื่อเปลี่ยนสี scrollbar ของ song-grid */
   .song-grid::-webkit-scrollbar {
   width: 10px;
@@ -199,7 +214,10 @@ body {
   background: #b3b3b3;
   border-radius: 10px;
 }
+
+/* reponsive ของเว็บไซต์ทำให้กำหนดขนาดของ sidebar และ content ให้แสดงผลได้ดีในมือถือ */
 @media (max-width: 426px) {
+  /* ทำให้ sidebar ไม่แสดงผล */
   .sidebar {
     display: none;
   }
@@ -224,6 +242,7 @@ body {
   .content {
     width: 100%;
   }
+  /* ทำให้ profile ไม่แสดงผล */
   .profile {
     display: none;
   }
